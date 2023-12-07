@@ -1,11 +1,11 @@
 // main.dart
 import 'package:flutter/material.dart';
-import 'ventas.dart';
-import 'afiliacion.dart';
-import 'nuestrosproductos.dart';
-import 'faq.dart';
-import 'descargas.dart';
-import 'herramientas.dart';
+import 'ventas/ventas.dart';
+import 'afiliacion/afiliacion.dart';
+import 'productos/nuestrosproductos.dart';
+import 'faq/faq.dart';
+import 'descargas/descargas.dart';
+import 'herramientas/herramientas.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -37,7 +37,7 @@ class FirstRoute extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => NuestrosProductos()),
                 );
               },
-              child: const Text('Nuestros Productotes'),
+              child: const Text('Nuestros Productos'),
             ),
 
             //Afiliacion
