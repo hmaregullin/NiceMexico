@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'oro.dart';
+import 'plata.dart';
+import 'perlas.dart';
+import 'diamante.dart';
+import 'relojes.dart';
+import 'lentes.dart';
+import 'aretes.dart';
+import 'cremas.dart';
+import 'tes.dart';
+import 'otros.dart';
 
 class NuestrosProductos extends StatelessWidget {
   // Lista de productos
@@ -28,39 +38,130 @@ class NuestrosProductos extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Expanded(
-              child: ListView.builder(
-                itemCount: productos.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    title: Text(productos[index]),
-                  );
-                },
-              ),
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Oro()),
+                    );
+                  },
+                  child: const Text('Oro'),
+                ),
+                const SizedBox(width: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Plata()),
+                    );
+                  },
+                  child: const Text('Plata'),
+                ),
+              ],
             ),
-          ],
-        ),
-      ),
-      // Añade el IconButton al final de la pantalla
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const SizedBox(
-              width: 50.0,
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Perlas()),
+                    );
+                  },
+                  child: const Text('Perlas'),
+                ),
+                const SizedBox(width: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Diamante()),
+                    );
+                  },
+                  child: const Text('Diamante'),
+                ),
+              ],
             ),
-            const Text(
-              'Descargar el muestrario',
-              textAlign: TextAlign.center,
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Relojes()),
+                    );
+                  },
+                  child: const Text('Relojes'),
+                ),
+                const SizedBox(width: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Lentes()),
+                    );
+                  },
+                  child: const Text('Lentes'),
+                ),
+              ],
             ),
-            IconButton(
-              icon: const Icon(Icons.file_download),
-              onPressed: () {
-                // Agrega aquí la lógica para descargar el PDF
-                // Puedes mostrar un diálogo de descarga o realizar alguna otra acción.
-                // Ejemplo:
-                // showDownloadDialog(context);
-              },
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Aretes()),
+                    );
+                  },
+                  child: const Text('Aretes'),
+                ),
+                const SizedBox(width: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Cremas()),
+                    );
+                  },
+                  child: const Text('Cremas'),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Tes()),
+                    );
+                  },
+                  child: const Text('Tes'),
+                ),
+                const SizedBox(width: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Otros()),
+                    );
+                  },
+                  child: const Text('Otros'),
+                ),
+              ],
             ),
           ],
         ),
