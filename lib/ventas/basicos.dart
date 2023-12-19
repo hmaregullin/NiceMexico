@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
-import 'package:flutter_pdfview/flutter_pdfview.dart';
 import 'muestrario.dart';
 
 class Basicos extends StatelessWidget {
