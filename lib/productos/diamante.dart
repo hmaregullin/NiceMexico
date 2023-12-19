@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Diamante extends StatelessWidget {
-  Diamante({
+  const Diamante({
     super.key,
   });
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Plata extends StatelessWidget {
-  Plata({
+  const Plata({
     super.key,
   });
 

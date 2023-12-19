@@ -1,7 +1,7 @@
-// Importa el paquete carousel_slider
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
+import 'muestrario.dart';
 
 class Raspadito extends StatelessWidget {
   // Lista de imágenes
@@ -18,9 +18,9 @@ class Raspadito extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Spacer(), // Mueve "Básicos" al medio de la pantalla
+            const Spacer(),
             const Text('Raspadito'),
-            const Spacer(), // Mantiene el espacio entre "Básicos" y el botón
+            const Spacer(),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -35,19 +35,16 @@ class Raspadito extends StatelessWidget {
           ],
         ),
       ),
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            // Tu texto existente aquí
             const SizedBox(height: 20),
             const Text('Demo de raspadito',
                 style: TextStyle(
                   fontSize: 18,
                 ),
                 textAlign: TextAlign.center),
-            // Espacio entre el texto y el carrusel
             const SizedBox(height: 50),
 
             // CarouselSlider con las imágenes
@@ -81,7 +78,6 @@ class Raspadito extends StatelessWidget {
               }).toList(),
             ),
 
-            // Espacio entre el carrusel y el botón
             const SizedBox(height: 20),
 
             ElevatedButton(
@@ -93,7 +89,6 @@ class Raspadito extends StatelessWidget {
           ],
         ),
       ),
-      // Añade el IconButton al final de la pantalla
       bottomNavigationBar: BottomAppBar(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -102,16 +97,16 @@ class Raspadito extends StatelessWidget {
               width: 50.0,
             ),
             const Text(
-              'Descargar el muestrario',
+              'Ver el muestrario',
               textAlign: TextAlign.center,
             ),
             IconButton(
               icon: const Icon(Icons.file_download),
               onPressed: () {
-                // Agrega aquí la lógica para descargar el PDF
-                // Puedes mostrar un diálogo de descarga o realizar alguna otra acción.
-                // Ejemplo:
-                // showDownloadDialog(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Muestrario()),
+                );
               },
             ),
           ],

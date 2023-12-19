@@ -1,5 +1,6 @@
 // second_page.dart
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class Afiliacion extends StatelessWidget {
   const Afiliacion({super.key});
@@ -10,12 +11,6 @@ class Afiliacion extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Afiliacion'),
         centerTitle: true, // Cambia el título si es necesario
-      ),
-      body: const Center(
-        child: ElevatedButton(
-          onPressed: null,
-          child: Text('Return'),
-        ),
       ),
     );
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Cremas extends StatelessWidget {
-  Cremas({
+  const Cremas({
     super.key,
   });
 

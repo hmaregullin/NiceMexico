@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Oro extends StatelessWidget {
-  Oro({
+  const Oro({
     super.key,
   });
 

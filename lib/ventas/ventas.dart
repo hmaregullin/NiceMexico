@@ -1,4 +1,3 @@
-// second_page.dart
 import 'package:flutter/material.dart';
 import 'basicos.dart';
 import 'ventasamigos.dart';
@@ -15,7 +14,7 @@ class Ventas extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Ventas'),
-        centerTitle: true, // Cambia el título si es necesario
+        centerTitle: true,
       ),
       body: Center(
         child: Column(

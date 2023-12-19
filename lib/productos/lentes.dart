@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Lentes extends StatelessWidget {
-  Lentes({
+  const Lentes({
     super.key,
   });
 

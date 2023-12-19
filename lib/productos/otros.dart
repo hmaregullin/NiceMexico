@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Otros extends StatelessWidget {
-  Otros({
+  const Otros({
     super.key,
   });
 
@@ -46,11 +46,10 @@ class Otros extends StatelessWidget {
             // Espacio entre el texto y el carrusel
             const SizedBox(height: 50),
             SizedBox(
-              width: 250.0, // Ajusta el ancho según tus preferencias
-              height: 250.0, // Ajusta el alto según tus preferencias
+              width: 250.0,
+              height: 250.0,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(
-                    10.0), // Ajusta el radio según tus preferencias
+                borderRadius: BorderRadius.circular(10.0),
                 child: Image.asset('assets/images/aceite_escencial.jpg'),
               ),
             ),

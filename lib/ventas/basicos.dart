@@ -1,7 +1,8 @@
-// Importa el paquete carousel_slider
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
+import 'package:flutter_pdfview/flutter_pdfview.dart';
+import 'muestrario.dart';
 
 class Basicos extends StatelessWidget {
   // Lista de imágenes
@@ -21,9 +22,9 @@ class Basicos extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Spacer(), // Mueve "Básicos" al medio de la pantalla
+            const Spacer(),
             const Text('Básicos'),
-            const Spacer(), // Mantiene el espacio entre "Básicos" y el botón
+            const Spacer(),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -38,12 +39,10 @@ class Basicos extends StatelessWidget {
           ],
         ),
       ),
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            // Tu texto existente aquí
             const SizedBox(height: 20),
             const Text(
                 'Un producto físico asegura ventas rápidas. Comienza con tus aretes, son económicos y se venden fácilmente al no requerir medidas.',
@@ -99,7 +98,6 @@ class Basicos extends StatelessWidget {
           ],
         ),
       ),
-      // Añade el IconButton al final de la pantalla
       bottomNavigationBar: BottomAppBar(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -108,16 +106,16 @@ class Basicos extends StatelessWidget {
               width: 50.0,
             ),
             const Text(
-              'Descargar el muestrario',
+              'Ver el muestrario',
               textAlign: TextAlign.center,
             ),
             IconButton(
               icon: const Icon(Icons.file_download),
               onPressed: () {
-                // Agrega aquí la lógica para descargar el PDF
-                // Puedes mostrar un diálogo de descarga o realizar alguna otra acción.
-                // Ejemplo:
-                // showDownloadDialog(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Muestrario()),
+                );
               },
             ),
           ],

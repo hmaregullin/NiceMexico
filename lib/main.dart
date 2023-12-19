@@ -20,7 +20,7 @@ class FirstRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Nice Team Plus'),
+        title: const Text('Nice Team Plfus'),
         centerTitle: true,
       ),
       body: Center(
