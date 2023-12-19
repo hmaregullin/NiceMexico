@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Aretes extends StatelessWidget {
-  Aretes({
+  const Aretes({
     super.key,
   });
 

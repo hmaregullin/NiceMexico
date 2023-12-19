@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
+import 'aceites.dart';
 
 class Otros extends StatelessWidget {
-  Otros({
+  const Otros({
     super.key,
   });
 
@@ -46,11 +47,10 @@ class Otros extends StatelessWidget {
             // Espacio entre el texto y el carrusel
             const SizedBox(height: 50),
             SizedBox(
-              width: 250.0, // Ajusta el ancho según tus preferencias
-              height: 250.0, // Ajusta el alto según tus preferencias
+              width: 250.0,
+              height: 250.0,
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(
-                    10.0), // Ajusta el radio según tus preferencias
+                borderRadius: BorderRadius.circular(10.0),
                 child: Image.asset('assets/images/aceite_escencial.jpg'),
               ),
             ),
@@ -75,16 +75,16 @@ class Otros extends StatelessWidget {
               width: 50.0,
             ),
             const Text(
-              'Descargar el muestrario',
+              'Ver el muestrario',
               textAlign: TextAlign.center,
             ),
             IconButton(
               icon: const Icon(Icons.file_download),
               onPressed: () {
-                // Agrega aquí la lógica para descargar el PDF
-                // Puedes mostrar un diálogo de descarga o realizar alguna otra acción.
-                // Ejemplo:
-                // showDownloadDialog(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Aceites()),
+                );
               },
             ),
           ],

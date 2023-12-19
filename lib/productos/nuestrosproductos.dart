@@ -46,7 +46,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Oro()),
+                      MaterialPageRoute(builder: (context) => const Oro()),
                     );
                   },
                   child: const Text('Oro'),
@@ -56,7 +56,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Plata()),
+                      MaterialPageRoute(builder: (context) => const Plata()),
                     );
                   },
                   child: const Text('Plata'),
@@ -71,7 +71,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Perlas()),
+                      MaterialPageRoute(builder: (context) => const Perlas()),
                     );
                   },
                   child: const Text('Perlas'),
@@ -81,7 +81,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Diamante()),
+                      MaterialPageRoute(builder: (context) => const Diamante()),
                     );
                   },
                   child: const Text('Diamante'),
@@ -96,7 +96,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Relojes()),
+                      MaterialPageRoute(builder: (context) => const Relojes()),
                     );
                   },
                   child: const Text('Relojes'),
@@ -106,7 +106,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Lentes()),
+                      MaterialPageRoute(builder: (context) => const Lentes()),
                     );
                   },
                   child: const Text('Lentes'),
@@ -121,7 +121,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Aretes()),
+                      MaterialPageRoute(builder: (context) => const Aretes()),
                     );
                   },
                   child: const Text('Aretes'),
@@ -131,7 +131,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Cremas()),
+                      MaterialPageRoute(builder: (context) => const Cremas()),
                     );
                   },
                   child: const Text('Cremas'),
@@ -156,7 +156,7 @@ class NuestrosProductos extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Otros()),
+                      MaterialPageRoute(builder: (context) => const Otros()),
                     );
                   },
                   child: const Text('Otros'),

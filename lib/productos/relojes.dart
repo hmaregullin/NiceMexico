@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
 
 class Relojes extends StatelessWidget {
-  Relojes({
+  const Relojes({
     super.key,
   });
 

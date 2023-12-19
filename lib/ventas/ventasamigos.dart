@@ -2,6 +2,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
+import 'muestrario.dart';
 
 class VentasAmigos extends StatelessWidget {
   // Lista de imágenes
@@ -23,9 +24,9 @@ class VentasAmigos extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Spacer(), // Mueve "Básicos" al medio de la pantalla
+            const Spacer(),
             const Text('Amigos y Conocidos'),
-            const Spacer(), // Mantiene el espacio entre "Básicos" y el botón
+            const Spacer(),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -40,12 +41,10 @@ class VentasAmigos extends StatelessWidget {
           ],
         ),
       ),
-
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            // Tu texto existente aquí
             const SizedBox(height: 20),
             const Text(
                 'Como venderle a amigos y conocidos, aquí van a ir videos',
@@ -53,7 +52,6 @@ class VentasAmigos extends StatelessWidget {
                   fontSize: 18,
                 ),
                 textAlign: TextAlign.center),
-            // Espacio entre el texto y el carrusel
             const SizedBox(height: 50),
 
             // CarouselSlider con las imágenes
@@ -87,7 +85,6 @@ class VentasAmigos extends StatelessWidget {
               }).toList(),
             ),
 
-            // Espacio entre el carrusel y el botón
             const SizedBox(height: 20),
 
             ElevatedButton(
@@ -99,7 +96,6 @@ class VentasAmigos extends StatelessWidget {
           ],
         ),
       ),
-      // Añade el IconButton al final de la pantalla
       bottomNavigationBar: BottomAppBar(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -108,16 +104,16 @@ class VentasAmigos extends StatelessWidget {
               width: 50.0,
             ),
             const Text(
-              'Descargar el muestrario',
+              'Ver el muestrario',
               textAlign: TextAlign.center,
             ),
             IconButton(
               icon: const Icon(Icons.file_download),
               onPressed: () {
-                // Agrega aquí la lógica para descargar el PDF
-                // Puedes mostrar un diálogo de descarga o realizar alguna otra acción.
-                // Ejemplo:
-                // showDownloadDialog(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Muestrario()),
+                );
               },
             ),
           ],

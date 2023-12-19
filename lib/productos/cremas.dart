@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_nice/main.dart';
+import 'skincare.dart';
 
 class Cremas extends StatelessWidget {
-  Cremas({
+  const Cremas({
     super.key,
   });
 
@@ -74,16 +75,16 @@ class Cremas extends StatelessWidget {
               width: 50.0,
             ),
             const Text(
-              'Descargar el muestrario',
+              'Ver el muestrariso',
               textAlign: TextAlign.center,
             ),
             IconButton(
               icon: const Icon(Icons.file_download),
               onPressed: () {
-                // Agrega aquí la lógica para descargar el PDF
-                // Puedes mostrar un diálogo de descarga o realizar alguna otra acción.
-                // Ejemplo:
-                // showDownloadDialog(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Skincare()),
+                );
               },
             ),
           ],
